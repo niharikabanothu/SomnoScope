@@ -1,0 +1,20 @@
+# Core numerics — the data pipeline, metrics, degradations and band-power
+# analysis depend only on these.
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+pandas>=2.0
+PyYAML>=6.0
+matplotlib>=3.7
+
+# Deep learning. CPU wheels are fine; the model is small enough to train on a
+# laptop in a few hours, or ~10 min/fold on a single modern GPU.
+#   CPU-only install:
+#     pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+
+# Nice-to-haves
+tqdm>=4.65
+
+# Dev / test
+pytest>=7.4
